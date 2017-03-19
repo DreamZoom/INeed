@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Web", "INeed.Web\INeed.Web.csproj", "{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Entity", "INeed.Entity\INeed.Entity.csproj", "{18EBB638-1C1F-452C-9672-CEDA4F46BCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Config", "INeed.Config\INeed.Config.csproj", "{F4E3A723-9AA0-4533-9CD9-07F5C4EBFF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Core", "INeed.Core\INeed.Core.csproj", "{9029C822-2C11-4026-9EFC-E04AC2B66F08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Authorize", "INeed.Authorize\INeed.Authorize.csproj", "{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Showing", "INeed.Showing\INeed.Showing.csproj", "{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EBB638-1C1F-452C-9672-CEDA4F46BCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EBB638-1C1F-452C-9672-CEDA4F46BCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EBB638-1C1F-452C-9672-CEDA4F46BCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EBB638-1C1F-452C-9672-CEDA4F46BCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E3A723-9AA0-4533-9CD9-07F5C4EBFF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E3A723-9AA0-4533-9CD9-07F5C4EBFF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E3A723-9AA0-4533-9CD9-07F5C4EBFF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E3A723-9AA0-4533-9CD9-07F5C4EBFF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9029C822-2C11-4026-9EFC-E04AC2B66F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9029C822-2C11-4026-9EFC-E04AC2B66F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9029C822-2C11-4026-9EFC-E04AC2B66F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9029C822-2C11-4026-9EFC-E04AC2B66F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
