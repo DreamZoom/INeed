@@ -13,6 +13,17 @@ namespace INeed.Showing
 {
     public class ResourceController : ManageControllerBase<ResourceService, Resource>
     {
+
+        public override IQueryable<Resource> LWhere(IQueryable<Resource> queryable)
+        {
+            string res_type = Request.Params["res_type"];
+            if (!string.IsNullOrWhiteSpace(res_type))
+            {
+                queryable = queryable.Where(m => m.ResType == res_type);
+            }
+            return base.LWhere(queryable);
+        }
+
         public ActionResult UploadResource(string res_type)
         {
             string resource_path = Server.MapPath("/resources");

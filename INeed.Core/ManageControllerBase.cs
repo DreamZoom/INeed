@@ -43,13 +43,18 @@ namespace INeed.Core
         }
 
 
-        public ActionResult List(int page=1,int pagesize=20)
+        public virtual IQueryable<TEntity> LWhere(IQueryable<TEntity> queryable)
         {
-            var pagedlist = Service.GetList().OrderBy(m => m.ID).ToPagedList(page, pagesize);
+            return queryable;
+        }
+        public virtual ActionResult List(int page=1,int pagesize=20)
+        {
+            var queryable = LWhere(Service.GetList().OrderBy(m => m.ID));
+            var pagedlist = queryable.ToPagedList(page, pagesize);
             return JsonSuccess("列表获取成功", new { rows=pagedlist,total=pagedlist.TotalItemCount });
         }
 
-        public ActionResult Create(TEntity model)
+        public virtual ActionResult Create(TEntity model)
         {
             
             try
@@ -68,7 +73,7 @@ namespace INeed.Core
         }
 
 
-        public ActionResult Edit(TEntity model)
+        public virtual ActionResult Edit(TEntity model)
         {
             try
             {
@@ -85,7 +90,7 @@ namespace INeed.Core
             }
         }
 
-        public ActionResult Delete(int Id)
+        public virtual ActionResult Delete(int Id)
         {
             try
             {
@@ -103,7 +108,7 @@ namespace INeed.Core
             }
         }
 
-        public ActionResult Details(int Id)
+        public virtual ActionResult Details(int Id)
         {
             try
             {
@@ -125,7 +130,7 @@ namespace INeed.Core
         /// </summary>
         /// <param name="IdList"></param>
         /// <returns></returns>
-        public ActionResult DeleteList(int[] IdList)
+        public virtual ActionResult DeleteList(int[] IdList)
         {
             try
             {
@@ -145,7 +150,7 @@ namespace INeed.Core
         /// <param name="field"></param>
         /// <param name="value"></param>
         /// <returns></returns>
-        public ActionResult UpdateList(int[] IdList,string field,string value)
+        public virtual ActionResult UpdateList(int[] IdList, string field, string value)
         {
             try
             {
