@@ -62,7 +62,7 @@ namespace INeed.Core
                 if (ModelState.IsValid)
                 {
                     Service.Create(model);
-                    return JsonSuccess();
+                    return JsonSuccess("创建成功",model);
                 }
                 throw new Exception("模型验证失败");
             }
