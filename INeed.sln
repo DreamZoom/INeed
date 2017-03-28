@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Web", "INeed.Web\INeed.Web.csproj", "{C6F12E34-0CD0-4BEB-AE86-27A868C3C8BD}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Authorize", "INeed.Authorize\INeed.Authorize.csproj", "{DEE931FC-BDDF-48F7-94BB-C7EC5A85866E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Showing", "INeed.Showing\INeed.Showing.csproj", "{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INeed.Identity", "INeed.Identity\INeed.Identity.csproj", "{20EB48A7-1A11-4022-8659-BDAE9E5B72B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E78B8E1-254D-4A8D-A18A-84EC06FEE5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20EB48A7-1A11-4022-8659-BDAE9E5B72B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EB48A7-1A11-4022-8659-BDAE9E5B72B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EB48A7-1A11-4022-8659-BDAE9E5B72B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EB48A7-1A11-4022-8659-BDAE9E5B72B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

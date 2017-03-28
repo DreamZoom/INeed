@@ -13,6 +13,12 @@ namespace INeed.Web.Controllers
             return View();
         }
 
+        [Authorize]
+        public ActionResult Editor()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
