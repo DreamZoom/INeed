@@ -14,13 +14,16 @@ namespace INeed.Showing
     {
         public override IQueryable<Presentation> LWhere(IQueryable<Presentation> queryable)
         {
+            string key = Request.Params["key"];
             if (User.Identity.IsAuthenticated)
             {
                 queryable = queryable.Where(m => m.Owner == User.Identity.Name);
             }
+            else{
+                queryable = queryable.Where(m => m.Owner == key);
+            }
             return base.LWhere(queryable);
         }
-
         public override ActionResult Create(Presentation model)
         {
             if (User.Identity.IsAuthenticated)
