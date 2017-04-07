@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/ppt/common.css" rel="stylesheet" />
+<link href="~/ppt/presentation.css" rel="stylesheet" />
+<div class="container">
+    <div id="root"></div>
+</div>
+
+<script>
+    window.config = {
+        userkey: "@User.Identity.Name",
+        create_url: "/Presentation/Create",
+        edit_url: "@Url.Action("editor")",
+        show_url: "@Url.Action("show")",
+    }
+</script>
+<script src="~/ppt/common.js"></script>
+<script src="~/ppt/presentation.js"></script>

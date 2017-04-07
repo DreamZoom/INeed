@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Editor";
+    Layout = null;// "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    
+    <link href="~/ppt/common.css" rel="stylesheet" />
+    <link href="~/ppt/editor.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script>
+    window.config = {
+        pageid: @Request.Params["id"],
+        userkey: "@User.Identity.Name",
+        save_url: "/Presentation/SavePageContent",
+        get_url: "/Presentation/GetPageContent",
+        return_url: "@Url.Action("index")",
+    }
+    </script>
+    <script src="~/ppt/common.js"></script>
+    <script src="~/ppt/editor.js"></script>
+
+</body>
+</html>
+
+
+
+

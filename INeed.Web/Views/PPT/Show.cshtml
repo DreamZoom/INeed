@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        html, body {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+
+    <link href="~/ppt/common.css" rel="stylesheet" />
+    <link href="~/ppt/show.css" rel="stylesheet" />
+    <link href="~/ppt/animate.css" rel="stylesheet" />
+    <link href="~/ppt/swiper.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script>
+    window.config = {
+        userkey: "",
+        get_url: "/Presentation/GetPageContent?id=@Request.Params["id"]",
+    }
+    </script>
+    <script src="~/ppt/common.js"></script>
+    <script src="~/ppt/show.js"></script>
+
+</body>
+</html>
+

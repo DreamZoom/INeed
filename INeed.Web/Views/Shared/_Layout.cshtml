@@ -7,7 +7,11 @@
     <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <style type="text/css">
+        .body-content{
+            margin-top:60px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -23,7 +27,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("发布管理", "Editor", "Home")</li>
+                    <li>@Html.ActionLink("发布管理", "Index", "PPT")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -31,6 +35,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+    </div>
+    <div class="container ">
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>

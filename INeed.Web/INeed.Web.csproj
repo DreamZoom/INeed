@@ -168,6 +168,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EditorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PPTController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +190,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="ppt\animate.css" />
+    <Content Include="ppt\common.css" />
+    <Content Include="ppt\common.js" />
+    <Content Include="ppt\editor.css" />
+    <Content Include="ppt\editor.js" />
+    <Content Include="ppt\presentation.js" />
+    <Content Include="ppt\swiper.css" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
@@ -239,6 +247,9 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Editor.cshtml" />
     <Content Include="Views\Home\Showing.cshtml" />
+    <Content Include="Views\PPT\Index.cshtml" />
+    <Content Include="Views\PPT\Editor.cshtml" />
+    <Content Include="Views\PPT\Show.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
